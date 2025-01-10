@@ -1,0 +1,305 @@
+.overlay-image {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.overlay-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.overlay-image.link {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s, font-size 0.3s;
+}
+
+.header-container {
+    width: 100%;
+    height: 60px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 290px;
+    position: relative;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.header-icons .icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+
+
+/* Menu Styles */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    transition: 0.2s;
+    margin-bottom: auto;
+    margin-top: 10px;
+    
+}
+
+.menu .trendings {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu .trendings .links {
+    font-size: 18px; /* Slightly bigger font for links */
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, font-size 0.3s ease;
+}
+
+.menu .trendings .links:hover {
+    opacity: 1;
+    font-size: 20px; /* Make text slightly larger when hovered */
+}
+
+.menu .product-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu .product-menu .links {
+    display: flex;
+    gap: 15px;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+.menu .product-menu .links .nav .access {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu .product-menu .links .nav .access:hover {
+    background-color: #555; /* Light color when hovered */
+    transform: scale(0.95); /* Slight shrink effect on hover */
+}
+
+
+
+/* Icons Container */
+.icons-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between the icons */
+}
+
+.icon-container {
+    display: flex; /* Make the container a flexbox */
+    justify-content: flex-end; /* Align items to the right */
+    gap: 15px; /* Add spacing between the icons */
+    position: absolute; /* Keep the icons positioned */
+    right: 20px;
+    top: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.icon-image {
+    width: 30px; /* Adjust icon size as needed */
+    height: 30px;
+}
+
+.h2 {
+    font-size: 30px;
+    color: white;
+    margin-left: 150px;
+}
+
+/* Container for listing items */
+.listing-items {
+    display: flex; /* Enable flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-around; /* Add space between items */
+    gap: 20px; /* Space between items */
+    margin: 20px auto;
+    max-width: 1200px; /* Limit the maximum width of the container */
+}
+
+/* Each item */
+.listing-items .item {
+    flex : 1 0 30%;
+    box-sizing: border-box;
+    width: calc(25% - 30px); /* Adjust width (25% of the row minus spacing) */
+    background-color: #222; /* Item background */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    
+}
+
+/* Image container */
+.listing-items .item .cover {
+    height: 200px; /* Fixed height for images */
+    overflow: hidden;
+    position: relative;
+}
+
+.listing-items .item .cover img {
+    width: 100%; /* Image fills the container */
+    height: 100%; /* Maintain image dimensions */
+    object-fit: cover;  /* Prevent image stretching */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    
+}
+
+/* Hover effect */
+.listing-items .item .cover:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+    filter: brightness(1.2); /* Brighten the image */
+}
+
+/* Info section */
+.listing-items .item .info {
+    padding: 10px;
+    color: white;
+    background-color: #333;
+}
+
+/* Name and price side by side */
+.listing-items .item .info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Discount styling */
+.listing-items .item .discount {
+    color: orange;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Footer Container */
+.footer-container {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+   
+}
+
+/* Links Section */
+.footer-container .list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.footer-container .list li {
+    margin: 5px 0;
+}
+
+.footer-container .list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-container .list li a:hover {
+    color: #ffa500;
+}
+
+/* Social Media Icons */
+.footer-container .medias {
+    margin: 20px 0;
+}
+
+.footer-container .icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-container .social-icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.footer-container .social-icon.discord {
+    background-image: url('./icons/discord-removebg-preview.png');
+}
+
+.footer-container .social-icon.x {
+    background-image: url('./icons/x-removebg-preview.png');
+}
+
+.footer-container .social-icon.instagram {
+    background-image: url('.icons/insta-removebg-preview.png');
+}
+
+.footer-container .social-icon.facebook {
+    background-image: url('./icons/facebook-removebg-preview.png');
+}
+
+.footer-container .social-icon.youtube {
+    background-image: url('./icons/youtube-removebg-preview.png');
+}
+
+.footer-container .social-icon.twitch {
+    background-image: url('./icons/twitch-removebg-preview.png');
+}

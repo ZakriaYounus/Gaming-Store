@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styling */
+body {
+    margin: 0;
+    background-color: #272727;
+    font-family: Arial, sans-serif;
+}
+
+/* Header container */
+.header-container {
+    background-color: #0f0f0f; /* Dark black background */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+    padding: 0 30px;
+    padding-top: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+/* Overlay Image */
+.overlay-image {
+    position: relative;
+    z-index: 10;
+}
+
+.overlay-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 0; /* Remove border-radius for a sharp look */
+}
+
+/* Progress Steps Container */
+.progress-steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0; /* Remove default gaps */
+    flex-grow: 1;
+}
+
+/* Step styling */
+.progress-steps .step {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #666; /* Inactive text color */
+}
+
+/* Active step */
+.progress-steps .step.active {
+    color: #fff; /* Active text color */
+}
+
+/* Step Number Styling */
+.progress-steps .step .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #444; /* Default inactive gray border */
+    margin-right: 10px;
+    color: #444;
+    background-color: transparent;
+}
+
+/* Active step number */
+.progress-steps .step.active .number {
+    border: 2px solid #ff6600; /* Orange border for active step */
+    color: #fff;
+    background-color: #000; /* Black background */
+}
+
+/* Spacer Styling */
+.progress-steps .spacer {
+    width: 80px;
+    height: 2px;
+    background-color: #444; /* Gray inactive line */
+}
+
+/* Active spacer */
+.progress-steps .step.active + .spacer {
+    background-color: #ff6600; /* Orange line after active step */
+}
+
+/* Text Alignment */
+.progress-steps .step .text {
+    color: #666;
+    white-space: nowrap;
+}
+
+.progress-steps .step.active .text {
+    color: #fff; /* White for active step */
+}
+
+/* Last step styling */
+.progress-steps .step:last-child .spacer {
+    display: none; /* Remove the last spacer */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    
+  }
+  
+  .cart, .summary {
+    border-radius: 10px;
+    background-color: #323232;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 45%; /* Make the containers take up half the width */
+   margin-left: 40px;
+  }
+  
+  .cart h2 {
+    color: whitesmoke;
+    margin-bottom: 10px;
+    padding-left: 190px;
+  }
+  
+  .cart p {
+    color: #999999;
+    margin-bottom: 10px;
+    padding-top: 40px;
+  }
+
+  .summary {
+    margin-right: 50px;
+    padding-right: 50px;
+    background-color: #101010;
+    border-radius: 10px;
+  }
+  
+  .summary h2 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .summary .item {
+    color: #999999;
+    margin-right: 290px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+  
+  
+  .summary .item strong {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  .summary .total {
+    color:#FFFFFF;
+    font-weight: bold;
+    margin-right: 290px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+  }
+  
+  .summary .continue {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #999999;
+    text-decoration: none;
+    padding-top: 20px;
+  }
+  
+  .summary .continue:hover {
+    text-decoration: underline;
+  }
+
+  .button {
+    align-items: center;
+    border-radius: 7px;
+    box-sizing: border-box;
+    color: #999999;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 17px;
+    font-weight: 700;
+    height: 56px;
+    justify-content: center;
+    padding-top : 70px;
+    text-align: center;
+    white-space: normal;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    
+    
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Footer Container */
+.footer-container {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 400px;
+   
+}
+
+/* Links Section */
+.footer-container .list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.footer-container .list li {
+    margin: 5px 0;
+}
+
+.footer-container .list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-container .list li a:hover {
+    color: #ffa500;
+}
+
+/* Social Media Icons */
+.footer-container .medias {
+    margin: 20px 0;
+}
+
+.footer-container .icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.footer-container .social-icon {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+
+.footer-container .social-icon.discord {
+    background-image: url('./icons/discord-removebg-preview.png');
+}
+
+.footer-container .social-icon.x {
+    background-image: url('./icons/x-removebg-preview.png');
+}
+
+.footer-container .social-icon.instagram {
+    background-image: url('.icons/insta-removebg-preview.png');
+}
+
+.footer-container .social-icon.facebook {
+    background-image: url('./icons/facebook-removebg-preview.png');
+}
+
+.footer-container .social-icon.youtube {
+    background-image: url('./icons/youtube-removebg-preview.png');
+}
+
+.footer-container .social-icon.twitch {
+    background-image: url('./icons/twitch-removebg-preview.png');
+}
+
+
